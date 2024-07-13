@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flowbite_custom-v2406.css">
+    <link rel="stylesheet" href="/fontawesome-v5.14.4.css">
+    <title>Mico Hospital</title>
+    <style>
+        nav{
+            background-color: #09ca90;
+        }
+        nav #navbar li{
+            margin: 0 20px;
+        }
+        nav{
+            color: white;
+        }
+        nav #navbar li a{
+            text-shadow: 1px 1px 2px black;
+            font-weight: 600;
+        }
+        #rightSection .dots{
+            margin: -15% 0;
+        }
+         #body{
+            box-shadow: -1px 5px 10px  black;
+        }
+        #indicator{
+            margin: - 50px;
+            transform: translate(-150px, 240px);
+            right: 0;
+        }
+        #form{
+            box-shadow: 2px 5px 10px black;
+        }
+        #form input{
+            border: 1px solid #09ca90;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="topHeader" class="my-2 flex-j-center">
+        <div class="w-40p flex-j-between flex-y-center">
+            <i class="fas fa-phone-alt" style="color: #63E6BE;"></i>
+            <p>Call: +01 12345678990</p>
+            <i class="fas fa-envelope" style="color: #63E6BE;"></i>
+            <p>Email: demo@gmail.com</p>
+            <i class="fas fa-map-marker-alt" style="color: #63E6BE;"></i>
+            <p>Location</p>
+        </div>
+        <div class="w-40p"></div>
+    </header>
+    <!--  -->
+    <nav class="flex-j-around flex-y-center">
+        <div class="flex-xy-center">
+            <img src="./img/logo.png" class="mx-4 px-6 py-4 h-24 bg-white">
+            <!--  -->
+            <ul id="navbar" class="flex">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">TREATMENT</a></li>
+                <li><a href="#">DOCTORS</a></li>
+                <li><a href="#">TESTIMONIAL</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="w-10p"></div>
+        <!--  -->
+        <div class="w-20p py-2 flex-j-around flex-y-center">
+            <a href="#l"><i class="fas fa-user"></i></a>
+            <a href="#"><p>LOGIN</p></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><p>SIGN UP</p></a>
+            <a href="#" class="mx-4"><i class="fas fa-search"></i></a>
+              
+        </div>
+    </nav>
+    <!--  -->
+    <section id="body" class="my-8 flex-xy-center">
+        <div id="leftSection" class="w-45p px-4">
+            <i class="fas fa-play-circle mb-8" style="font-size: 40px; color: #09ca90;"></i>
+            <h1 class="my-2 text-4xl">MICO <br><span style="color:#09ca90">HOSPITAL</span></h1>
+            <p class="my-4">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+            <button class="my-4 px-6 py-1 bg-black text-white text-base rounded">Contact Us</button>
+        </div>
+        <!--  -->
+        <div id="rightSection" class="w-45p" style="margin-bottom: 100px;">
+            <img src="./img/slider-img.jpg" class="h-96 relative z-40">
+            <img src="./img/dots.png" class="dots h-100p absolute right-0 z-50">
+        </div>
+        <!--  -->
+        <div id="indicator" class="absolute z-60">
+            <span class="px-4 py-2" style="background-color: #09ca90;"><i class="fas fa-chevron-left text-white"></i></span>
+            <span class="px-4 py-2" style="background-color: #09ca90;"><i class="fas fa-chevron-right text-white"></i></span>
+        </div>
+    </section>
+    <!--  -->
+    <section id="form" class="w-80p p-8 mx-auto mb-8 rounded-lg">
+        <h2 style="color:#09ca90;"><span class="text-black">BOOK</span> APPOINTMENT</h2>
+        <form class="w-full">
+            <row class="flex-j-between">
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Patient Name</label>
+                    <input type="text">
+                </div>
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Doctor's Name</label>
+                    <select id="options" name="options">
+                        <option value="option1">Normal Distribution</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+                </div>
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Department's Name</label>
+                    <select id="options" name="options">
+                        <option value="option1">Normal Distribution</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+                </div>
+            </row>
+            <!--  -->
+            <row class="flex-j-between">
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Phone Number</label>
+                    <input type="text" placeholder="XXXXXXXX">
+                </div>
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Symptoms</label>
+                    <input type="text">
+                </div>
+                <div class="w-30p flex flex-col">
+                    <label class="my-2">Choose Date</label>
+                     <input type="date" name="" id="" value="07/03/2024">
+                </div>
+            </row>
+            <!--  -->
+            <button class="mt-8 px-4 py-2 bg-black text-white rounded">
+                SUBMIT NOW
+            </button>
+        </form>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.min.js"></script> -->
+
+</body>
+</html>
